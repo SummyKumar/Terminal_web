@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #liner::before{/* element with id gets his name*/
+            color:  #008000;
+            content:"visit@cookie.fr.:~$";
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summy Kumar | Terminal</title>
+
+    <link rel="stylesheet"  href="index_files/style.css">
+</head>
+<body>
+    <div id="terminal">
+        <a  id ="before" href=""></a>
+    </div>
+    <div id="command" onclick="$('texter').focus();"><!--When clicked,  focuses the textarea with id 'texter' using jQuery-->
+         <!-- Calls typeIt() on key press down, and moveIt() to handle cursor movement or before(keyup calls)-->
+        <textarea name=""  id="texter" 
+            onkeyup="typeIt(this,event)"   
+            onkeydown="typeIt(this,event); moveIt(this.value.length,event)" 
+            onkeypress="typeIt(this,event);" 
+            autofocus="">
+        </textarea> <!-- Calls typeIt() on key press down, and moveIt() to handle cursor movement -->
+
+        <div id="liner">
+            <span id="typer"></span>  <!-- Span to display typed characters dynamically -->
+            <b class="cursor" id="cursor" style="left : 0px;"></b> <!-- Blinking cursor element -->
+        </div>
+    </div>
+    <script src="index_files/caret.js"></script>
+    <script src="index_files/commands.js"></script>
+    <script src="index_files/main.js"></script>
+</body>
+</html>
+
