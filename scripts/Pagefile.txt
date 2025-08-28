@@ -1,0 +1,5 @@
+This is Pagefile.sys
+--------------------
+This is a fake system file used for testing purposes.
+It contains some dummy text for your browser-based terminal demo.
+End of Pagefile.sys

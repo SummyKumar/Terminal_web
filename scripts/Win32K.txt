@@ -1,0 +1,6 @@
+This is Win32K.sys
+-------------------
+This is another fake system file for demonstration.
+It contains sample content to be displayed when using 'cat' in your terminal.
+End of Win32K.sys
+
